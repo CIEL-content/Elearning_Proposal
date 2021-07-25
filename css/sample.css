@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+body{
+	font-family: 'Montserrat', 'Arial Narrow', serif;
+	background: #ddd url(../images/demo3.jpg) repeat top left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	margin: 0;
+	overflow: auto;
+	margin: 0;
+	
+}
+
+:root {
+  --color: #3c3163;
+  --transition-time: 1s;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10%;
+  padding: 2rem;
+  margin: 0 auto;
+  width: max-content;
+  margin-top: 40px;
+}
+
+.card {
+  font-family: "Montserrat";
+  height: 12em;
+  width: 18em;
+  font-size: 14px;
+  color: #f05922;
+  border-radius: 2em;
+  padding: 1em;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 2em -1em #417b7b;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 7px solid #b0d5e2d1;
+  background-color: #b1c5cca3;
+  transform-style: preserve-3d;
+}
+/*
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover {
+  transform: rotate(0);
+}*/
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size:12px;
+ font-weight:900;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size:18px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+/*
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function:cubic-bezier(0.4, 0, 1, 1);
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: #4994a0d9;
+  width: 200%;
+  height: 200%;
+}
+
+
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+*/
+.card-grid-space .num {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.f-title{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 55px;
+	text-align:center;
+	width: 100%;
+}
+.f-title h2{
+	line-height: 50px;
+	margin: 0;
+	font-weight: 700;
+	font-size: 35px;
+	color: #00a0e2;
+	float: left;
+	width: 33%;
+	Font-family: 'Montserrat Black';
+}
+.f-title a{
+	width: 33%;
+	float: left;
+	text-align: right;
+	overflow: hidden;
+	height: 75px;
+	font-size: 20px;
+	line-height: 60px;
+	padding: 0px 15px;
+	color: #777;
+	font-style: italic;
+	font-family: "Montserrat Black";
+}
+.f-title a:first-child{
+	text-align: left;
+}
+.f-title a:hover{
+	color: #000;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns:repeat(4, 25%);;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
