@@ -2,7 +2,9 @@
 
 body{
 	font-family: 'Montserrat', 'Arial Narrow', serif;
-	background: #ddd url(../images/demo3.jpg) repeat top left;
+	background: #ddd url(../images/bg.png) repeat;
+	background-position: top center;
+	background-size: cover;
 	font-weight: 400;
 	font-size: 15px;
 	color: #333;
@@ -34,7 +36,7 @@ a {
   align-items: center;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 10px;
-  grid-row-gap: 10%;
+  grid-row-gap: 7%;
   padding: 2rem;
   margin: 0 auto;
   width: max-content;
@@ -42,11 +44,11 @@ a {
 }
 
 .card {
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif;
   height: 12em;
   width: 18em;
   font-size: 14px;
-  color: #f05922;
+  color:black;
   border-radius: 2em;
   padding: 1em;
   margin: 10px;
@@ -58,8 +60,8 @@ a {
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
-  border: 7px solid #b0d5e2d1;
-  background-color: #b1c5cca3;
+  border: 4px solid #298adb;
+  background-color: #f2eecb;
   transform-style: preserve-3d;
 }
 /*
@@ -83,21 +85,20 @@ a {
 }
 
 .card p {
-  font-size:12px;
- font-weight:900;
+  font-size:16px;
+ font-weight:700;
   margin-top: 0.5em;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .card .tags {
   display: flex;
+  color:#f05922;
+  font-weight:700;
 }
 
 .card .tags .tag {
-  font-size:18px;
-  background: rgba(255,255,255,0.5);
-  border-radius: 0.3rem;
-  padding: 0 0.5em;
+  font-size:16px;
   margin-right: 0.5em;
   line-height: 1.5em;
   transition: all, var(--transition-time);
@@ -147,14 +148,15 @@ a {
 .card-grid-space .num {
   font-size: 18px;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+
 }
 
 .f-title{
+	background: #ddd url(../images/map.png) repeat;
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height: 55px;
+	height: 9%;
 	text-align:center;
 	width: 100%;
 }

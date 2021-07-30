@@ -5,6 +5,7 @@
 	-webkit-perspective: 2200px;
 	-moz-perspective: 2200px;
 	perspective: 2200px;
+	
 }  
 .page {
 	width: 50%;
@@ -14,7 +15,7 @@
 	-moz-transform-style: preserve-3d;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
-	-webkit-touch-callout: none;
+	-webkit-touch-callout: default;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -282,7 +283,7 @@ a.f-ref{
 	padding: 20px;
 	overflow: auto;
 	position: relative;
-	background: #efefef;
+	background: ##efefef;
 	cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
     cursor: zoom-in;
@@ -370,7 +371,7 @@ a.f-ref{
 
 
 .box1{
-	/*old color #f2f2f2;*/
+	/*old color #f2f2f2; #efefef;*/
 	border-top: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
 	float: left;
@@ -906,13 +907,15 @@ a.f-ref{
 
 .sme-1{
 	background-image: url(../images/uma.png);
+	height:18%
 }
 .sme-2{
 	background-image: url(../images/arti.jpg);
 }
 .sme-3{
 	background-image: url(../images/anju.png);
-	margin-top:19px
+	margin-top:10px;
+	height:20%;
 }
 .sme-4{
 	background-image: url(../images/labdhi.png);
