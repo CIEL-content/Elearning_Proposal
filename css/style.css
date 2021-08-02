@@ -188,8 +188,8 @@ a.f-ref{
 
 .f-backpage-flip{
 	color: #ddd;
-	position: absolute;
-	right: 226px;
+	position: fixed;
+	right: 31%;
 	padding: 5px 30px 5px 20px;
 	font-size: 30px;
 	text-transform: uppercase;

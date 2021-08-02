@@ -34,8 +34,8 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: auto auto auto auto;
-  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 9%;
   grid-row-gap: 7%;
   padding: 2rem;
   margin: 0 auto;
@@ -60,8 +60,8 @@ a {
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
-  border: 4px solid #298adb;
-  background-color: #f2eecb;
+  border: 6px solid #298adb;
+  background-color: #ffffff;
   transform-style: preserve-3d;
 }
 /*
@@ -89,6 +89,7 @@ a {
  font-weight:700;
   margin-top: 0.5em;
   line-height: 1.5em;
+  margin-bottom:2em
 }
 
 .card .tags {
@@ -164,7 +165,7 @@ a {
 	line-height: 50px;
 	margin: 0;
 	font-weight: 700;
-	font-size: 35px;
+	font-size: 30px;
 	color: #00a0e2;
 	float: left;
 	width: 33%;
@@ -190,6 +191,10 @@ a {
 	color: #000;
 }
 
+.logodemo img{
+		width: auto;
+		height: 50px;
+}
 .info {
   font-size: 1.2em;
   display: flex;
@@ -251,4 +256,14 @@ a {
   .info h1 {
     margin: 0;
   }
+}
+
+@media screen and (min-width: 1400px) {
+.f-title h2{
+	margin-top:1%;
+	font-size:35px;
+}
+.logodemo img {
+		width: auto;
+		height: 76px;
 }
